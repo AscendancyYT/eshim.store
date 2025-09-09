@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eshimov - Premium Gaming Goods</title>
+  </head>
+  <body>
+    <div class="floating-elements"></div>
+
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="logo">ESHIMOV</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+        </ul>
+        <button class="cart-icon" onclick="toggleCart()">
+          🛒
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <h1>ESHIMOV</h1>
+        <p>Premium Gaming Goods for the Ultimate Experience</p>
+        <button class="cta-button" onclick="scrollToProducts()">
+          SHOP NOW
+        </button>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <h2 class="section-title">Featured Products</h2>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <div class="cart-sidebar" id="cartSidebar">
+      <div class="cart-header">
+        <h3>Shopping Cart</h3>
+        <button class="close-cart" onclick="toggleCart()">✕</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-total" id="cartTotal">Total: $0.00</div>
+      <button class="checkout-btn" onclick="checkout()">CHECKOUT</button>
+    </div>
+
+    <script>
+    </script>
+    <script src="./functions/main.js"></script>
+  </body>
+</html>
